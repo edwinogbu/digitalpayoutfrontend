@@ -1,0 +1,195 @@
+
+.carousel-text {
+ 
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.testimonial-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.carousel-inner {
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item {
+  height: 100vh; 
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+.caption-left {
+      position: absolute;
+  top: -70%;
+  left: -70%;
+  right: -70%;
+  bottom: -70;
+  transform: translate(-20%, -10%);
+  text-align: left;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 10px;
+  width:300px;
+} 
+
+.testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+
+      .whatsapp-chat-widget {
+          position: fixed;
+          bottom: 20px;
+          left: 20px; /* Changed from right: 20px to left: 20px */
+          z-index: 1000;
+      }
+      
+      #whatsapp-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 60px;
+          height: 60px;
+          background-color: #25D366;
+          border-radius: 50%;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+          cursor: pointer;
+      }
+      
+      #whatsapp-btn img {
+          width: 70%;
+          height: 70%;
+          object-fit: cover;
+      }
+      
+      /* Styles for the chat box */
+      .chat-box {
+          display: none;
+          position: fixed;
+          bottom: 90px;
+          left: 20px; /* Changed from right: 20px to left: 20px */
+          width: 300px;
+          background: white;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          z-index: 1001;
+          font-family: Arial, sans-serif;
+      }
+      
+      .chat-header, .chat-footer {
+          padding: 10px;
+          background: #25D366;
+          color: white;
+          border-radius: 8px 8px 0 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      
+      .chat-header {
+          border-bottom: 1px solid #ccc;
+      }
+      
+      .chat-footer {
+          border-top: 1px solid #ccc;
+          justify-content: center;
+      }
+      
+      .chat-content {
+          padding: 10px;
+          font-size: 14px;
+      }
+      
+      .close-btn {
+          font-size: 20px;
+          cursor: pointer;
+      }
+      
+      .chat-footer a {
+          background: #25D366;
+          color: white;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 4px;
+          display: inline-block;
+      }
+
+      main{
+        padding: 0px;
+        margin: 0px;
+      }
+      main article{
+        padding: 0px;
+        margin: 0px;
+      }
+      main article .hero{
+        padding: 0px;
+        margin: 0px;
+      }
+    
+       

@@ -24,7 +24,101 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Digital PayOut App</title>
+    <!-- 
+  - custom css link
+-->
+<link rel="stylesheet" href="./assets/css/style.css">
+
+<!-- 
+  - google font link
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  /* General styles for the chat widget */
+  .whatsapp-chat-widget {
+      position: fixed;
+      bottom: 20px;
+      left: 40px; /* Changed from right: 20px to left: 20px */
+      z-index: 1000;
+  }
+  
+  #whatsapp-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background-color: #000033;
+      /* background-color: #25D366; */
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      cursor: pointer;
+  }
+  
+  #whatsapp-btn img {
+      width: 70%;
+      height: 70%;
+      object-fit: cover;
+  }
+  
+  /* Styles for the chat box */
+  .chat-box {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      left: 20px; /* Changed from right: 20px to left: 20px */
+      width: 300px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1001;
+      font-family: Arial, sans-serif;
+  }
+  
+  .chat-header, .chat-footer {
+      padding: 10px;
+      background: #25D366;
+      color: white;
+      border-radius: 8px 8px 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .chat-header {
+      border-bottom: 1px solid #ccc;
+  }
+  
+  .chat-footer {
+      border-top: 1px solid #ccc;
+      justify-content: center;
+  }
+  
+  .chat-content {
+      padding: 10px;
+      font-size: 14px;
+  }
+  
+  .close-btn {
+      font-size: 20px;
+      cursor: pointer;
+  }
+  
+  .chat-footer a {
+      background: #25D366;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+  }
+  </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +133,74 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+        <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var whatsappBtn = document.getElementById('whatsapp-btn');
+        var chatBox = document.getElementById('chat-box');
+        var closeBtn = document.getElementById('close-btn');
+        var chatHeader = document.querySelector('.chat-header');
+        var chatContent = document.querySelector('.chat-content');
+        
+        whatsappBtn.addEventListener('mouseenter', function() {
+            chatContent.style.display = 'block';
+        });
+    
+        whatsappBtn.addEventListener('mouseleave', function() {
+            chatContent.style.display = 'none';
+        });
+        
+        whatsappBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            chatBox.style.display = 'block';
+            
+            // Show chat header and welcome message when chat box opens
+            chatHeader.style.display = 'block';
+            chatContent.style.display = 'block';
+        });
+        
+        closeBtn.addEventListener('click', function() {
+            chatBox.style.display = 'none';
+            
+            // Hide chat header and welcome message when chat box closes
+            chatHeader.style.display = 'none';
+            chatContent.style.display = 'none';
+        });
+    });
+    
+      </script>
+
+     
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6383eee0b0d6371309d16415/1gitlq7hu';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+<script>
+  $(document).ready(function() {
+  $('#carouselExampleIndicators').carousel();
+});
+
+</script>
   </body>
 </html>

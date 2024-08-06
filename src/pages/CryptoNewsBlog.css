@@ -1,0 +1,559 @@
+
+
+
+
+:root {
+  --cadet-blue-crayola: hsl(227, 13%, 73%);
+  --maximum-yellow-red: hsl(41, 95%, 61%);
+  --medium-sea-green: hsl(142, 43%, 54%);
+  --blue-crayola_10: hsla(222, 100%, 61%, 0.05);
+  --smocky-black_30: hsla(0, 0%, 6%, 0.3);
+  --eerie-black-1: hsl(240, 84%, 12%);
+  --eerie-black-2: hsl(240, 100%, 20%);
+  --raisin-black: hsl(225, 15%, 16%);
+  --blue-crayola: hsl(288, 84%, 12%);
+  --blue-table: hsl(300, 50%, 40%);
+  --roman-silver: hsl(223, 10%, 52%);
+  --presian-red: hsl(0, 64%, 52%);
+  --gunmetal_50: hsla(230, 16%, 22%, 0.5);
+  --gainsboro: hsl(0, 0%, 85%);
+  --cultured: hsl(0, 0%, 93%);
+  --white_50: hsla(0, 0%, 100%, 0.5);
+  --white_30: hsla(0, 0%, 100%, 0.3);
+  --white_10: hsla(0, 0%, 100%, 0.1);
+  --black_10: hsla(0, 0%, 0%, 0.1);
+  --white: hsl(0, 0%, 100%);
+}
+
+
+.carousel-item {
+  height: 400px; 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.carousel-item .carousel-caption {
+  position: absolute;
+  bottom: 1rem;
+  left: -50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.carousel-item .carousel-caption h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.carousel-item .carousel-caption p {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: var(--secondary-color);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+
+.sidebar {
+  background-color: var( --eerie-black-1);
+  color: var(--white);
+  padding: 20px;
+}
+
+.sidebar-item {
+  margin-bottom: 15px;
+}
+
+.sidebar-item a {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.sidebar-item-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sidebar-item-title {
+  font-size: 1rem;
+}
+
+
+.main-content {
+  padding: 20px;
+  background-image: url('./../../public/assets/images/fly-coins.jpg');
+}
+
+.news-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card {
+  background-color: var(--eerie-black-1);
+  color: var(--white);
+  border-radius: 8px;
+  border: 8px solid ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: var(--blue-table);
+}
+
+.card-text {
+  color: var(--white);
+}
+
+.btn-primary {
+  background-color: var(--maximum-yellow-red);
+  border-color: var(--maximum-yellow-red);
+}
+
+.btn-primary:hover {
+  background-color: var(--presian-red);
+  border-color: var(--presian-red);
+}
+
+
+.carousel-wrapper {
+  position: relative;
+  height: 200px; /* Adjust height as needed */
+  background-image: url('./../../public/assets/images/fly-coins.jpg'); /* Set your static background image here */
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-wrapper .carousel-item {
+  height: 100%;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 2rem; /* Adjust as needed */
+}
+
+.hero-text {
+  font-size: 1rem; /* Adjust as needed */
+}
+
+.btn-primary {
+  background-color: #28a745; /* Adjust to match your color theme */
+  border-color: #28a745; /* Adjust to match your color theme */
+}
+
+.btn-primary:hover {
+  background-color: #218838; /* Adjust to match your color theme */
+  border-color: #1e7e34; /* Adjust to match your color theme */
+}
+
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+  
+  .sidebar-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .sidebar-item-img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-item-title {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-title {
+    font-size: 1.25rem;
+  }
+  
+  .sidebar {
+    padding: 15px;
+  }
+  
+  .main-content {
+    padding: 15px;
+  }
+}
+
+
+
+/* 
+:root {
+  --cadet-blue-crayola: hsl(227, 13%, 73%);
+  --maximum-yellow-red: hsl(41, 95%, 61%);
+  --medium-sea-green: hsl(142, 43%, 54%);
+  --blue-crayola_10: hsla(222, 100%, 61%, 0.05);
+  --smocky-black_30: hsla(0, 0%, 6%, 0.3);
+  --eerie-black-1: hsl(240, 84%, 12%);
+  --eerie-black-2: hsl(240, 100%, 20%);
+  --raisin-black: hsl(225, 15%, 16%);
+  --blue-crayola: hsl(288, 84%, 12%);
+  --blue-table: hsl(300, 50%, 40%);
+  --roman-silver: hsl(223, 10%, 52%);
+  --presian-red: hsl(0, 64%, 52%);
+  --gunmetal_50: hsla(230, 16%, 22%, 0.5);
+  --gainsboro: hsl(0, 0%, 85%);
+  --cultured: hsl(0, 0%, 93%);
+  --white_50: hsla(0, 0%, 100%, 0.5);
+  --white_30: hsla(0, 0%, 100%, 0.3);
+  --white_10: hsla(0, 0%, 100%, 0.1);
+  --black_10: hsla(0, 0%, 0%, 0.1);
+  --white: hsl(0, 0%, 100%);
+} */
+
+/* .sidebar {
+  background-color: var(--blue-crayola);
+  color: var(--white);
+  padding: 20px;
+  margin-top: 40px;
+  padding-top: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.sidebar-item {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.sidebar-item a {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.sidebar-item-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.main-content {
+  padding: 20px;
+  background-image: url('./../../public/assets/images/fly-coins.jpg');
+}
+
+.news-section {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-title {
+  color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+
+  
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: var(--eerie-black-2);
+}
+
+.card-text {
+  color: var(--eerie-black-1);
+}
+
+.btn-primary {
+  background-color: var(--maximum-yellow-red);
+  border-color: var(--maximum-yellow-red);
+}
+
+.btn-primary:hover {
+  background-color: var(--presian-red);
+  border-color: var(--presian-red);
+} */
+
+
+/* body {
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar-item {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar-item-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sidebar-item-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sidebar-item a:hover .sidebar-item-img {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+  padding-left: 20px;
+}
+
+.news-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #138496;
+  border-color: #138496;
+} */
+
+
+/* body {
+  background-color: #f8f9fa;
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #17a2b8;
+}
+
+.main-content {
+  padding-left: 20px;
+}
+
+.news-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #138496;
+  border-color: #138496;
+} */
+
+
+/* .news-section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .card {
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+   */
